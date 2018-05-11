@@ -37,7 +37,7 @@ body {
   padding: 0px;
   margin: 0px;
 
-  background-color: #ccc;
+  background-color: #fff;
 
   font-family: "Karla", Arial, sans-serif;
   font-weight: 400;
@@ -191,6 +191,10 @@ body {
 .btn-start:hover,
 .btn-start:focus {
   background-color: #2d8bcb;
+}
+
+.btn-start:active {
+  background-color: #2d8ccbe5;
 }
 
 .btn-start::before {
@@ -386,6 +390,8 @@ body {
   background-color: #ffbdb8;
 
   cursor: pointer;
+
+  outline: none;
 }
 
 .btn-submit::after {
@@ -401,8 +407,11 @@ body {
   vertical-align: middle;
 }
 
-
 .btn-submit:hover,
 .btn-submit:focus {
   background-color: #eeb2ad;
+}
+
+.btn-submit:active {
+  background-color: #fdc5bf;
 }

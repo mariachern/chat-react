@@ -20,9 +20,11 @@ class Dialog extends React.Component {
       username: this.props.username,
       message
     };
-  
-    messageObj.myMessage = true;
-    this.addMessage(messageObj);
+
+    if (messageObj.message) {
+      messageObj.myMessage = true;
+      this.addMessage(messageObj);
+    }
   } 
   
   addMessage(message) {
